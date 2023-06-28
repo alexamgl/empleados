@@ -7,12 +7,12 @@ const bodyParser = require('body-parser')
 //conexión con la bd de mongo
 mongoose
     //.connect('mongodb://127.0.0.1:27017/empleadosds01sv22')
-    .connect('mongodb+srv://alexamgl:<siaVkGkfZiQn7Kp0>@ds01.eyoulti.mongodb.net/empleadosds01sv22?retryWrites=true&w=majority')
+    .connect('mongodb+srv://alexamgl:siaVkGkfZiQn7Kp0@ds01.eyoulti.mongodb.net/empleadosds01sv22?retryWrites=true&w=majority')
     .then((x)=> {
         console.log(`Conexión exitosa a la base de datos: "${x.connections[0].name}"`)
     })
     .catch((err)=>{
-        console.log('Error al conectarse con mongo', err.reason)
+        console.log('Error al conectarse con mongo', err)
     })
 
 
