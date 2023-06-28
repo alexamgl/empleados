@@ -18,7 +18,7 @@ mongoose
 
 //configuración dle servidor web
 const empleadoRuta = require('./routes/empleado.route')
-const { create } = require('domain')
+//const { create } = require('domain')
 const app =express()
 app.use(bodyParser.json())
 app.use(

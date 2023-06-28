@@ -4,7 +4,7 @@ const empleadoRuta = express.Router()
 
 //declaramos un objeto del modelo
 let Empleado = require('../models/Empleado')
-const { normalizeExtraEntryPoints } = require('@angular-devkit/build-angular/src/webpack/utils/helpers')
+// { normalizeExtraEntryPoints } = require('@angular-devkit/build-angular/src/webpack/utils/helpers')
 
 //agregar un nuevo empleado
 empleadoRuta.route('/create').post((req,res,next)=>{
